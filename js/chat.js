@@ -5,7 +5,11 @@ $("#btn-enviar-mensagem").on("click", enviarMensagem);
 function enviarMensagem() {
 
     let textoMensagem = $("#txt-mensagem").val();
-    let hora = new Date().getTime();
+
+    const meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+    let data = new Date();
+    let dataFormatada = ((data.getDate() + " " + meses[(data.getMonth())] + " " + data.getFullYear()));
+    let hora = data.getHours() + ":" + data.getMinutes();
 
 
     //o método load, carrega um html para dentro de um container html
@@ -19,7 +23,8 @@ function enviarMensagem() {
 
         //implementar o exercício aqui
 
-
+        templateTexto = templateTexto.replace("{{mensagem}}", textoMensagem);
+        templateTexto = templateTexto.replace("{{data}}", hora);
 
 
 
