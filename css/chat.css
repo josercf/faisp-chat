@@ -6,33 +6,43 @@ body {
     overflow-x: hidden;
 }
 
+html,
+body {
+    height: 100%;
+}
 
-img.img-profile{
+
+.full-height {
+    height: 100%;
+}
+
+
+img.img-profile {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    border: 1px #0400e8 solid;    
+    border: 1px #0400e8 solid;
 }
 
-.message-container{
+.message-container {
     /* height: 890px; */
     /* overflow-y: scroll; */
 }
 
-.message{
+.message {
     border-radius: 25px;
     height: 130px;
 }
 
-.message-to{
-    border:  #0b5803 solid 1px;
+.message-to {
+    border: #0b5803 solid 1px;
     border-left: #0b5803 solid 4px;
-    border-bottom: #0b5803 solid 4px;    
-        
+    border-bottom: #0b5803 solid 4px;
+
 }
 
-.message-from{
-    border:  #0b0358 solid 1px;
+.message-from {
+    border: #0b0358 solid 1px;
     border-right: #0b0358 solid 4px;
-    border-bottom: #0b0358 solid 4px; 
+    border-bottom: #0b0358 solid 4px;
 }

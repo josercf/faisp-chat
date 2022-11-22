@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <div class="columns">
+    <div class="columns full-height">
         <div class="column is-2">
             Contatos aqui
         </div>
-        <div class="column">
+        <div id="page" class="column">
             <div class="columns has-background-dark has-text-white">
                 <div class="column is-2 mt-4">
                     <img src="images/icon-faisp.png" class="img-profile">
@@ -28,41 +28,7 @@
             </div>
             <div class="columns has-background-grey-lighter message-container">
                 <div class="column is-1 mt-4"></div>
-                <div class="column is-9 mt-4">
-                    
-
-                    <div class="columns ">
-                        <div class="column is-10 mt-4">
-                            <div class="columns message-item mb-2">
-                                <div class="column is-6 mt-4 has-background-white-ter message message-from">
-
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="columns ">
-                        <div class="column is-3 mt-4"></div>
-                        <div class="column is-10 mt-4">
-                            <div class="columns message-item mb-2">
-                                <div class="column is-6 mt-4"></div>
-                                <div class="column is-6 mt-4 has-background-white-ter message message-to">
-
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="columns ">
-                        <div class="column is-10 mt-4">
-                            <div class="columns message-item mb-2">
-                                <div class="column is-6 mt-4 has-background-white-ter message message-from">
-
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
+                <div class="column is-9 mt-4"></div>
             </div>
             <div class="columns has-background-grey has-text-white is-fixed-bottom">
                 <div class="column is-1 mt-4">
@@ -80,10 +46,13 @@
             </div>
         </div>
     </div>
-
     <div id="temp"></div>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="js/chat.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
 
+    <script src="js/chat.js"></script>
+    
+</body>
 </html>
